@@ -8,7 +8,7 @@ Employee attrition leads to increased hiring costs, productivity loss, and opera
 This project analyzes employee data to identify key drivers of attrition and provide actionable insights to improve retention.
 
 ## Dashboard Preview  
-![Dashboard](images/dashboard_preview.png)
+![Dashboard](images/powerbidash.png)
 
 ## Objectives
 
