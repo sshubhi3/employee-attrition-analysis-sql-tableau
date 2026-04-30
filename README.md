@@ -1,82 +1,209 @@
-# employee-attrition-analysis-sql-tableau
-Employee Attrition Analysis
-Problem Statement
+
+# Employee Attrition Analysis
+
+## Problem Statement
 
 Employee attrition leads to increased hiring costs, productivity loss, and operational inefficiencies.
 
 This project analyzes employee data to identify key drivers of attrition and provide actionable insights to improve retention.
 
-Objectives
-Identify factors influencing employee attrition
-Segment high-risk employee groups
-Analyze the impact of compensation, overtime, and experience
-Build an interactive Tableau dashboard for decision-making
-Dataset Overview
-Total Records: 1470 employees
-Features: 35 columns including demographics, job details, and satisfaction metrics
-Target Variable: Attrition (Yes/No)
+---
+```md
+## Dashboard Preview  
+![Dashboard](images/dashboard_preview.png)
+```
 
-Key attributes include Age, Department, Job Role, Monthly Income, Overtime, Work-Life Balance, and Years at Company.
+## Objectives
 
-Tools and Technologies
-SQL for data cleaning and analysis
-Excel for validation and preliminary exploration
-Tableau for data visualization and dashboard creation
-Approach
-Data Cleaning (SQL)
-Checked for null values and duplicates
-Standardized categorical fields
-Created derived metrics for analysis
-Data Analysis (SQL)
-Calculated attrition rates
-Performed department-wise and role-wise analysis
-Compared income levels across attrition groups
-Analyzed overtime and experience trends
-Data Validation (Excel)
-Used pivot tables for cross-verification
-Validated aggregated metrics
-Data Visualization (Tableau)
+* Identify factors influencing employee attrition
+* Segment high-risk employee groups
+* Analyze the impact of compensation, overtime, and experience
+* Build an interactive Tableau dashboard for decision-making
 
-Built an interactive dashboard to analyze:
+---
 
-Attrition rate across departments and roles
-Salary differences between employees who left and stayed
-Impact of overtime on attrition
-Experience-based attrition trends
-Key Insights
-Overall attrition rate is 16.12 percent
-Sales department has the highest attrition rate at approximately 21 percent
-Employees who left earn significantly less on average compared to those who stayed
-Overtime employees are significantly more likely to leave
-High attrition observed among early-career employees and long-tenure employees
-Frequent business travel is associated with higher attrition
-Dashboard
+## Dataset Overview
+
+* Total Records: 1470 employees
+* Features: 35 columns including demographics, job details, and satisfaction metrics
+* Target Variable: Attrition (Yes/No)
+
+### Key Attributes
+
+* Demographics: Age, Gender, Marital Status
+* Job Details: Department, Job Role, Job Level
+* Compensation: Monthly Income, Salary Hike
+* Work Factors: Overtime, Business Travel
+* Satisfaction Metrics: Work-Life Balance, Job Satisfaction
+* Experience: Years at Company, Total Working Years
+
+---
+
+## Tools and Technologies
+
+* SQL
+
+  * Data cleaning
+  * Data transformation
+  * Analytical queries
+
+* Excel
+
+  * Data validation
+  * Pivot tables for cross-checking
+
+* Tableau
+
+  * Interactive dashboards
+  * Data visualization
+  * Insight generation
+
+---
+
+## Approach
+
+### Data Cleaning (SQL)
+
+* Checked for null values and duplicates
+* Standardized categorical fields
+* Created derived metrics for analysis
+
+### Data Analysis (SQL)
+
+* Calculated overall attrition rate
+* Performed department-wise and role-wise analysis
+* Compared income levels across attrition groups
+* Analyzed overtime impact
+* Studied experience-based attrition trends
+
+### Data Validation (Excel)
+
+* Created pivot tables for verification
+* Cross-validated SQL outputs
+* Ensured consistency in aggregates
+
+### Data Visualization (Tableau)
+
+* Built interactive dashboard with filters
+* Visualized attrition by department and role
+* Compared salary across attrition groups
+* Highlighted overtime and experience trends
+
+---
+
+## Key Insights
+
+* Overall attrition rate: 16.12 percent
+
+* Department-level insights
+
+  * Sales has the highest attrition (~21 percent)
+  * Indicates role-specific challenges and pressure
+
+* Compensation insights
+
+  * Employees who left earn significantly less on average
+  * Suggests income disparity as a key driver
+
+* Overtime impact
+
+  * Employees working overtime are significantly more likely to leave
+  * Indicates workload imbalance
+
+* Experience trends
+
+  * High attrition in early-career employees (0–2 years)
+  * Noticeable attrition in long-tenure employees (20+ years)
+
+* Travel factor
+
+  * Frequent business travel is linked with higher attrition (~25 percent)
+
+---
+
+## Dashboard
 
 The Tableau dashboard enables:
 
-Identification of high-risk employee segments
-Department and role-level attrition tracking
-Analysis of compensation and workload factors
-Interactive filtering for deeper insights
-Business Impactsignificantly reduce attrition.
+* Identification of high-risk employee segments
+* Department and role-level attrition tracking
+* Analysis of compensation and workload factors
+* Interactive filtering for deeper insights
 
-Even a small reduction in attrition can lead to measurable cost savings and improved workforce stability.
+### Key Views
 
-Recommendations
-Address income disparities across roles
-Reduce excessive overtime and improve workload distribution
-Focus on retention strategies for Sales roles
-Strengthen onboarding and mentorship for early-career employees
-Provide growth opportunities for long-tenure employees
-Offer flexible work options for employees with high travel requirements
-How to Use
-Execute SQL queries to perform analysis
-Use Excel for validation and quick summaries
-Open the Tableau dashboard file to explore insights interactively
-Conclusion
+* Attrition by Department
+* Attrition by Job Role
+* Salary vs Attrition
+* Overtime Impact
+* Experience vs Attrition Trend
 
-This project demonstrates how data analysis can be used to identify attrition drivers and support strategic HR decisions. By focusing on compensation, workload, and employee experience, organizations can improve retention and reduce costs.
+---
 
-Employee attrition increases recruitment and training costs and affects organizational productivity.
+## Business Impact
 
-Targeting high-risk groups such as overtime employees and Sales roles can
+* High attrition increases recruitment and training costs
+* Productivity loss due to frequent employee turnover
+* Increased pressure on remaining employees
+
+### Strategic Value
+
+* Identifies controllable factors like compensation and workload
+* Enables targeted retention strategies
+* Supports data-driven HR decision-making
+
+---
+
+## Recommendations
+
+* Compensation Optimization
+
+  * Address salary gaps in high-risk roles
+
+* Workload Management
+
+  * Reduce excessive overtime
+  * Introduce flexible work policies
+
+* Role-Specific Strategy
+
+  * Improve incentives and support in Sales roles
+
+* Early Career Retention
+
+  * Strengthen onboarding programs
+  * Provide mentorship
+
+* Long-Tenure Engagement
+
+  * Offer growth opportunities
+  * Recognize contributions
+
+* Travel Flexibility
+
+  * Provide hybrid options or travel benefits
+
+---
+
+## How to Use
+
+* Run SQL queries to perform analysis
+* Use Excel for validation and quick summaries
+* Open Tableau dashboard file for interactive insights
+
+---
+
+## Conclusion
+
+* Attrition is influenced by compensation, workload, and experience
+* High-risk segments can be identified using data analysis
+* Targeted interventions can significantly improve retention
+
+---
+
+## Author
+
+Shubhi Yadav
+Aspiring Data Analyst
+SQL | Excel | Tableau
+
